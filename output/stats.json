@@ -1,0 +1,99 @@
+{
+  "composition": {
+    "rows": 24590,
+    "orders": 898,
+    "operators": 46,
+    "skus": 4230,
+    "date_min": "2026-07-02 19:02:40",
+    "date_max": "2026-08-27 15:20:04",
+    "lines_by_reason": {
+      "live": 16337,
+      "bulk_massscan": 6845,
+      "break_boundary": 1362,
+      "session_start": 45,
+      "duplicate_scan": 1
+    },
+    "pct_bulk_of_all": 27.8,
+    "bulk_serial_share": 80.4,
+    "live_serial_share": 12.3,
+    "orders_majority_bulk": 70
+  },
+  "live_duration_s": {
+    "n": 16337,
+    "mean": 237.2,
+    "sd": 318.9,
+    "min": 4.0,
+    "p5": 13.0,
+    "p10": 21.0,
+    "p25": 45.0,
+    "p50": 106.0,
+    "p75": 283.0,
+    "p90": 654.0,
+    "p95": 969.2,
+    "p99": 1535.6,
+    "max": 1800.0,
+    "geometric_mean": 111.0,
+    "lognormal": {
+      "sigma": 1.279,
+      "median_est": 111.0,
+      "mu": 4.71
+    },
+    "median_ci95": [
+      103.0,
+      109.0
+    ]
+  },
+  "live_vs_bulk": {
+    "live_median_s": 106.0,
+    "bulk_median_s": 12.0,
+    "mannwhitney_U": 101991147.5,
+    "p_value": 0.0,
+    "rank_biserial": 0.824,
+    "naive_all_gap_median_s": 64.0
+  },
+  "naive_bias": {
+    "naive_mean_s": 176.0,
+    "naive_median_s": 57.0,
+    "corrected_mean_s": 237.2,
+    "corrected_median_s": 106.0,
+    "median_understated_pct": 46.2
+  },
+  "operators": {
+    "n_qualified": 37,
+    "fastest": "Сулейменов Нуржан",
+    "fastest_median_s": 31.0,
+    "slowest": "Серікбай Ахат",
+    "slowest_median_s": 237.0,
+    "spread_ratio": 7.6,
+    "kruskal_H": 1103.3,
+    "kruskal_p": 3.1554134271993685e-208
+  },
+  "operator_confound": {
+    "spearman_bulkshare_vs_median": -0.619,
+    "p_value": 4.372910171130648e-05,
+    "note": "negative => operators who mass-scan more show artificially faster live medians",
+    "nonserial_only": {
+      "n_qualified": 34,
+      "fastest": "Бигали Нурсултан",
+      "fastest_median_s": 34.0,
+      "slowest": "Асылбек Марал",
+      "slowest_median_s": 339.0,
+      "spread_ratio": 10.0
+    }
+  },
+  "categories": {
+    "kruskal_H": 1490.2,
+    "kruskal_p": 0.0,
+    "fastest": "Телефон сотовый",
+    "slowest": "Телевизор"
+  },
+  "serial_effect": {
+    "serial_median_s": 36.5,
+    "nonserial_median_s": 119.0,
+    "p_value": 9.683596850823864e-229
+  },
+  "quantity_effect": {
+    "spearman_rho": 0.085,
+    "p_value": 8.63830155180238e-28
+  }
+}
